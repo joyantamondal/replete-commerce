@@ -1,0 +1,246 @@
+*{
+    font-family: 'Saira Condensed', sans-serif;
+}
+/* card hover effect*/
+
+ 
+  .card-inner{
+      box-shadow: 0 1px 6px rgba(61, 65, 84, 0.15);
+      min-height: 150px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      border-radius: .5rem;
+      transition: 0.2s ease-in-out;
+      cursor:pointer;
+  }
+  
+  .card-inner:before {
+      width: 0;
+      transition: 0.2s;
+      z-index: 0;
+      content: "";
+      background-color: #F81A1A;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .card:hover .card-inner:before {
+      width: 100%;
+  }
+  .card:hover .card-inner{
+      top: -2px;
+      box-shadow: 0px 20px 40px 0px rgba(61, 65, 84, 0.15);
+  }
+/* card hover effect*/
+
+
+.replete-button-view-more{
+
+ background-color: #F81A1A;
+ padding: 5px 15px;
+ color: white;
+
+ border-radius: 5px;
+}
+.replete-button-view-more{
+    text-decoration: none;
+}
+.replete-button-view-more:hover{
+    background-color: #f81a1a70;
+    transition: 1s ease-in-out;
+    color: white;
+}
+
+
+.drk::before{
+    content: "";
+    display: block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.6;
+}
+/* <!-- week highlights section --> */
+.highlights-1{
+    background-color: #F0D5EF !important;
+}
+.highlights-2{
+    background-color: #DFF7F6 !important;
+}
+
+.highlights-2 img{
+width: 68% !important;
+}
+.trednding-1{
+    height: 300px;
+    box-shadow: 5px 5px 15px #6e434f20;
+    
+}
+.trednding-1:hover img{
+  transition:cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.ccc{
+   color: white !important;
+
+}
+/* .ccc img{
+    position: relative;
+
+} */
+
+.drk-ins::before{
+    content: "";
+    display: block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(15, 15, 15, 0.667);
+    opacity: 0.9;
+
+    /* height: 100% !important;
+   width: 100% !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: black;
+    opacity: 0.9; */
+    
+    
+}
+.inspiring-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+/* spotlight section  */
+.spotlight-image{
+    background-color: #F0D5EF !important;
+    position: relative;
+}
+.spotlight-image img{
+    background-color: #E7E2E7;
+border-radius: 20px;
+
+}
+.icon-play{
+    position: absolute;
+    top: -35%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+.icon-btn .fa-play-circle{
+    
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+.icon-btn:hover{
+    
+    background-color:#f81a1a70 !important;
+    color:#f81a1a !important ;
+    transition: 1s ease-in-out;
+    
+}
+.icon-btn .fa-play-circle:hover{
+    
+    transform: rotate(360deg);
+}
+.icon-btn{
+    background-color:#f81a1a !important;
+    border-radius: 100% !important;
+}
+/* subscribe  */
+.subscribe h3{
+    color: white;
+}
+.footer{
+    height: 50vh;
+    background-color: #020522 !important;
+    color:white;
+}
+/* footer */
+.social-icon ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-icon ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.social-icon ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .5s;
+    color: #000;
+}
+.social-icon ul li .fab:hover{
+    color: #fff;
+}
+.social-icon ul li a{
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 4px #02052216;
+    transition: .5s;
+    
+}
+.social-icon ul li a:hover{
+    transform: translate(0, -10px);
+}
+.social-icon ul li:nth-child(1) a:hover{
+    background-color: #1877F2;
+
+}
+.social-icon ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+
+}
+.social-icon ul li:nth-child(3) a:hover{
+    background-color: #1DA1F2;
+
+}
+.social-icon ul li:nth-child(4) a:hover{
+    background-color: #dd4b39;
+
+}
+/* media query for small devices */
+@media only screen and (max-width: 688px) {
+    .icon-play{
+        top: -45%;
+    }
+    .icon-btn .fa-play-circle{
+    
+        font-size: 20px;
+        padding: 5px;
+        color: white;
+    }
+    .insp-title{
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    }
+    .insp-p{
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    
+    /* text-align: center; */
+    margin: auto;
+    }
+
+}
